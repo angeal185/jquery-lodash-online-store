@@ -205,10 +205,11 @@ function itemSingleBlog(data,res){
 
 }
 
-function addItems(i){
+function addItems(i,domain){
   $('#itList').append(
     itemListTpl({
       "imgSub":i.imgSub,
+      "domain":domain,
       "title":i.title,
       "link":i.link,
       "description":i.description
@@ -256,7 +257,7 @@ function itemPaginate(){
 function itemList(data){
   basePaginate()
   _.forEach(data,function(i){
-    addItems(i)
+    addItems(i,data.domain)
   })
   itemPaginate()
 }
@@ -369,7 +370,7 @@ function searchInit(res,data){
   $('#main-view').prepend(searchResTpl({title:res}))
   basePaginate()
   _.forEach(_.filter(data, {'title': res}),function(i){
-    addItems(i)
+    addItems(i,data.domain)
   })
   itemPaginate()
 }
@@ -378,7 +379,7 @@ function catInit(res,data){
   $('#main-view').prepend(searchResTpl({title:res}))
   basePaginate()
   _.forEach(_.filter(data, {'category': res}),function(i){
-    addItems(i)
+    addItems(i,data.domain)
   })
   itemPaginate()
 }
@@ -388,7 +389,7 @@ function tagInit(res,data){
 
   basePaginate()
   _.forEach(_.filter(data, {'tags': [res]}),function(i){
-    addItems(i)
+    addItems(i,data.domain)
   })
   itemPaginate()
 }
