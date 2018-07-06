@@ -77,6 +77,7 @@ function initCartList(domain){
   })
   _.forEach(gotData,function(i){
     $('#listItems').append(cartItemTpl({
+      "domain":domain,
       "title":i.title,
       "id":i.id,
       "category":i.category,
@@ -104,14 +105,14 @@ function initCartList(domain){
 
 
 
-function latestItems(items){
+function latestItems(items,domain){
   var x = _.clone(arr);
   $('#sidebar').append(latestItemsBase())
   _.forEach(_.sortBy(items, ['date']),function(i){
     x.push(i)
   });
   _.forEach(_.reverse(x.slice(arr.length - 3)),function(i){
-    $('.latestItemsList').append(latestItemTpl({"img":i.imgSub,"title":i.title,"price":i.price,"src":i.title}))
+    $('.latestItemsList').append(latestItemTpl({"img":i.imgSub,"title":i.title,"price":i.price,"domain":domain,"src":i.title}))
   })
 
 }

@@ -18,7 +18,7 @@ $.getJSON('./public/data/data.json', function(data) {
   function initApp(){
     searchCat(data.items,data.domain);
     searchTag(data.items,data.domain);
-    latestItems(data.items);
+    latestItems(data.items,data.domain);
     cartBadgeInit();
     scrollTop('#app');
   }
