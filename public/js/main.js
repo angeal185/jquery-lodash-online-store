@@ -125,7 +125,7 @@ $.getJSON('./public/data/data.json', function(data) {
     itemSingle(data.items,res)
   });
 
-  page.base('angeal185.github.io/jquery-lodash-online-store/')
+  page.base('jquery-lodash-online-store/')
 
   initApp();
   page.start();
