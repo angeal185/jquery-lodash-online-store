@@ -17,7 +17,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   function initBase(){
     initBaseTpl();
-    initNav(data.nav);
+    initNav(data.nav,data.domain);
     bcrumbInit();
     initSidebar(data.sidebar);
     addCategories(data.items);
@@ -27,8 +27,8 @@ $.getJSON('./public/data/data.json', function(data) {
 
 
   function initApp(){
-    searchCat(data.items);
-    searchTag(data.items);
+    searchCat(data.items,data.domain);
+    searchTag(data.items,data.domain);
     latestItems(data.items);
     cartBadgeInit();
     scrollTop('#app');
@@ -45,7 +45,7 @@ $.getJSON('./public/data/data.json', function(data) {
     setTransition(data.transition.div,data.transition.type)
     initItemSlider(data.slides)
     itemList(data.items)
-    searchItems(data.items)
+    searchItems(data.items,data.domain)
 
   });
 
@@ -63,7 +63,7 @@ $.getJSON('./public/data/data.json', function(data) {
   page('/jquery-lodash-online-store/cart', function(){
     bcrumbChange('Cart')
     setTransition(data.transition.div,data.transition.type)
-    initCartList();
+    initCartList(data.domain);
   });
 
   page('/jquery-lodash-online-store/blog', function(){

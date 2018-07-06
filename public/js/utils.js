@@ -67,7 +67,7 @@ function cartBadgeInit(){
   }
 }
 
-function initCartList(){
+function initCartList(domain){
   var storedData = localStorage.getItem("cartData");
   if (storedData) {
   var gotData = JSON.parse(storedData);
@@ -94,7 +94,7 @@ function initCartList(){
     localStorage.setItem("cartData",  JSON.stringify(filtered));
     $('.cartBadge').html(filtered.length);
     $(this).parents('tr').remove();
-    page('/'+data.domain+'cart')
+    page('/'+domain+'cart')
   });
 
   } else{
@@ -216,13 +216,13 @@ function addItems(i){
   );
 }
 
-function searchItems(data){
+function searchItems(data,domain){
   $('#searchBtn').click(function() {
     var toSearch = $('#searchBox').val();
     if (toSearch === ''){
       console.log('search cannot be empty')
     } else {
-      page('/'+data.domain+'search/' + toSearch);
+      page('/'+domain+'search/' + toSearch);
     }
 
   });
@@ -311,19 +311,19 @@ function addCategories(e) {
 
 
 
-function searchTag(data){
+function searchTag(data,domain){
   $('.tag').click(function() {
     var toSearch = this.innerHTML;
-    page('/'+data.domain+'tag/' + toSearch);
+    page('/'+domain+'tag/' + toSearch);
   });
 }
 
 
 
-function searchCat(data){
+function searchCat(data,domain){
   $('.category').click(function() {
     var toSearch = this.innerHTML;
-    page('/'+data.domain+'category/' + toSearch);
+    page('/'+domain+'category/' + toSearch);
 
   });
 }
@@ -393,17 +393,17 @@ function tagInit(res,data){
   itemPaginate()
 }
 
-function initNav(items){
+function initNav(items,domain){
 
   $('#app').prepend(navTpl({
     "title":"ecommerce"
   }));
   _.forIn(items,function(i,e){
     $('#nav-mobile').append(navLnk({
-      "href":data.domain+e,"title":i
+      "href": domain + e,"title":i
     }))
   })
   $('#nav-mobile').prepend(navLnk({
-    "href":data.domain+"","title":"Store"
+    "href":domain + "","title":"Store"
   }))
 }
