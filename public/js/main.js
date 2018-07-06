@@ -40,7 +40,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
 
 
-  page('/jquery-lodash-online-store/', function(ctx){
+  page('/'+data.domain, function(ctx){
     bcrumbHide()
     setTransition(data.transition.div,data.transition.type)
     initItemSlider(data.slides)
@@ -49,24 +49,24 @@ $.getJSON('./public/data/data.json', function(data) {
 
   });
 
-  page('/jquery-lodash-online-store/about', function(ctx){
+  page('/'+data.domain+'about', function(ctx){
     bcrumbChange('About')
     setTransition(data.transition.div,data.transition.type)
     showtoast('About')
   });
 
-  page('/jquery-lodash-online-store/contact', function(){
+  page('/'+data.domain+'contact', function(){
     bcrumbChange('Contact')
     setTransition(data.transition.div,data.transition.type)
   });
 
-  page('/jquery-lodash-online-store/cart', function(){
+  page('/'+data.domain+'cart', function(){
     bcrumbChange('Cart')
     setTransition(data.transition.div,data.transition.type)
     initCartList(data.domain);
   });
 
-  page('/jquery-lodash-online-store/blog', function(){
+  page('/'+data.domain+'blog', function(){
     bcrumbChange('Blog')
     setTransition(data.transition.div,data.transition.type)
     showtoast('Blog')
@@ -74,7 +74,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   });
 
-  page('/jquery-lodash-online-store/blog/:id', function(ctx){
+  page('/'+data.domain+'blog/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Blog')
     setTransition(data.transition.div,data.transition.type)
@@ -82,7 +82,7 @@ $.getJSON('./public/data/data.json', function(data) {
     showtoast('Blog')
   });
 
-  page('/jquery-lodash-online-store/gallery', function(){
+  page('/'+data.domain+'gallery', function(){
 
     bcrumbChange('Gallery')
     setTransition(data.transition.div,data.transition.type)
@@ -94,7 +94,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   });
 
-  page('/jquery-lodash-online-store/search/:id', function(ctx){
+  page('/'+data.domain+'search/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Search')
     setTransition(data.transition.div,data.transition.type)
@@ -102,7 +102,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   });
 
-  page('/jquery-lodash-online-store/category/:id', function(ctx){
+  page('/'+data.domain+'category/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Category')
     setTransition(data.transition.div,data.transition.type)
@@ -110,7 +110,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   });
 
-  page('/jquery-lodash-online-store/tag/:id', function(ctx){
+  page('/'+data.domain+'tag/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Tag')
     setTransition(data.transition.div,data.transition.type)
@@ -118,7 +118,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   });
 
-  page('/jquery-lodash-online-store/item/:id', function(ctx){
+  page('/'+data.domain+'item/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Item')
     setTransition(data.transition.div,data.transition.type)
