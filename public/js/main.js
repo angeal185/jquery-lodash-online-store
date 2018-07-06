@@ -13,6 +13,7 @@ setCart([{
 
 $.getJSON('./public/data/data.json', function(data) {
 
+page.base('jquery-lodash-online-store/')
 
   function initBase(){
     initBaseTpl();
