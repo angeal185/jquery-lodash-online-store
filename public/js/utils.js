@@ -167,7 +167,7 @@ function itemSingle(data,res){
     })
     $('.itemTop').append(itemHeadTpl({"price":i.price,"title":i.title}));
     _.forIn(lst,function(x,e){
-      $('.itemMid').append(itemDescTpl({"key":e,"val":x}))
+      $('.itemMid').addClass('row').append(itemDescTpl({"key":e,"val":x}))
     })
     $('.itemBot').append(itemFootTpl({"link":i.link}));
     $('#addCart').click(function() {
