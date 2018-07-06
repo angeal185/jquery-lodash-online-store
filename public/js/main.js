@@ -13,7 +13,7 @@ setCart([{
 
 $.getJSON('./public/data/data.json', function(data) {
 
-page.base('jquery-lodash-online-store/')
+
 
   function initBase(){
     initBaseTpl();
@@ -38,9 +38,9 @@ page.base('jquery-lodash-online-store/')
 
   initBase();
 
- 
 
-  page('/', function(ctx){
+
+  page('/jquery-lodash-online-store/', function(ctx){
     bcrumbHide()
     setTransition(data.transition.div,data.transition.type)
     initItemSlider(data.slides)
@@ -49,24 +49,24 @@ page.base('jquery-lodash-online-store/')
 
   });
 
-  page('/about', function(ctx){
+  page('/jquery-lodash-online-store/about', function(ctx){
     bcrumbChange('About')
     setTransition(data.transition.div,data.transition.type)
     showtoast('About')
   });
 
-  page('/contact', function(){
+  page('/jquery-lodash-online-store/contact', function(){
     bcrumbChange('Contact')
     setTransition(data.transition.div,data.transition.type)
   });
 
-  page('/cart', function(){
+  page('/jquery-lodash-online-store/cart', function(){
     bcrumbChange('Cart')
     setTransition(data.transition.div,data.transition.type)
     initCartList();
   });
 
-  page('/blog', function(){
+  page('/jquery-lodash-online-store/blog', function(){
     bcrumbChange('Blog')
     setTransition(data.transition.div,data.transition.type)
     showtoast('Blog')
@@ -74,7 +74,7 @@ page.base('jquery-lodash-online-store/')
 
   });
 
-  page('/blog/:id', function(ctx){
+  page('/jquery-lodash-online-store/blog/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Blog')
     setTransition(data.transition.div,data.transition.type)
@@ -82,7 +82,7 @@ page.base('jquery-lodash-online-store/')
     showtoast('Blog')
   });
 
-  page('/gallery', function(){
+  page('/jquery-lodash-online-store/gallery', function(){
 
     bcrumbChange('Gallery')
     setTransition(data.transition.div,data.transition.type)
@@ -94,7 +94,7 @@ page.base('jquery-lodash-online-store/')
 
   });
 
-  page('/search/:id', function(ctx){
+  page('/jquery-lodash-online-store/search/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Search')
     setTransition(data.transition.div,data.transition.type)
@@ -102,7 +102,7 @@ page.base('jquery-lodash-online-store/')
 
   });
 
-  page('/category/:id', function(ctx){
+  page('/jquery-lodash-online-store/category/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Category')
     setTransition(data.transition.div,data.transition.type)
@@ -110,7 +110,7 @@ page.base('jquery-lodash-online-store/')
 
   });
 
-  page('/tag/:id', function(ctx){
+  page('/jquery-lodash-online-store/tag/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Tag')
     setTransition(data.transition.div,data.transition.type)
@@ -118,14 +118,14 @@ page.base('jquery-lodash-online-store/')
 
   });
 
-  page('/item/:id', function(ctx){
+  page('/jquery-lodash-online-store/item/:id', function(ctx){
     var res = ctx.params.id;
     bcrumbChange('Item')
     setTransition(data.transition.div,data.transition.type)
     itemSingle(data.items,res)
   });
 
-  
+
 
   initApp();
   page.start();

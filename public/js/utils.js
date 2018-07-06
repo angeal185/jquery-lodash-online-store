@@ -94,7 +94,7 @@ function initCartList(){
     localStorage.setItem("cartData",  JSON.stringify(filtered));
     $('.cartBadge').html(filtered.length);
     $(this).parents('tr').remove();
-    page('/cart')
+    page('/jquery-lodash-online-store/cart')
   });
 
   } else{
@@ -222,7 +222,7 @@ function searchItems(data){
     if (toSearch === ''){
       console.log('search cannot be empty')
     } else {
-      page('/search/' + toSearch);
+      page('/jquery-lodash-online-store/search/' + toSearch);
     }
 
   });
@@ -314,7 +314,7 @@ function addCategories(e) {
 function searchTag(data){
   $('.tag').click(function() {
     var toSearch = this.innerHTML;
-    page('/tag/' + toSearch);
+    page('/jquery-lodash-online-store/tag/' + toSearch);
   });
 }
 
@@ -323,7 +323,7 @@ function searchTag(data){
 function searchCat(data){
   $('.category').click(function() {
     var toSearch = this.innerHTML;
-    page('/category/' + toSearch);
+    page('/jquery-lodash-online-store/category/' + toSearch);
 
   });
 }
