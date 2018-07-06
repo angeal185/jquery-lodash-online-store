@@ -13,7 +13,7 @@ setCart([{
 
 $.getJSON('./public/data/data.json', function(data) {
 
-
+page.base('/jquery-lodash-online-store/')
 
   function initBase(){
     initBaseTpl();
@@ -38,7 +38,7 @@ $.getJSON('./public/data/data.json', function(data) {
 
   initBase();
 
-  //page.base(["/nodejs-ecommerce-cms/app"])
+ 
 
   page('/', function(ctx){
     bcrumbHide()
@@ -125,7 +125,7 @@ $.getJSON('./public/data/data.json', function(data) {
     itemSingle(data.items,res)
   });
 
-  page.base('jquery-lodash-online-store/')
+  
 
   initApp();
   page.start();
