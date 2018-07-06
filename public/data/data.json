@@ -1,7 +1,7 @@
 {
 	"title": "ecommerce",
 	"comments": true,
-  "domain":"jquery-lodash-online-store",
+  "domain":"jquery-lodash-online-store/",
 	"transition": {
 		"div": "#main-view",
 		"type": "fadeIn"
