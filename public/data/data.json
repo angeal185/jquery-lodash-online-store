@@ -55,11 +55,11 @@
 			"link": "www.x.com",
 			"date": "1530096431501",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [
-				"/public/img/items/test.jpg",
-				"/public/img/items/test.jpg",
-				"/public/img/items/test.jpg"
+				"https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
+				"https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
+				"https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg"
 			],
 			"status": "Available"
 		},
@@ -78,7 +78,7 @@
 			"link": "www.x.com",
 			"date": "1530096431502",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -97,7 +97,7 @@
 			"link": "www.x.com",
 			"date": "1",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -116,7 +116,7 @@
 			"link": "www.x.com",
 			"date": "1530096431503",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -135,7 +135,7 @@
 			"link": "www.x.com",
 			"date": "1530096431504",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -154,7 +154,7 @@
 			"link": "www.x.com",
 			"date": "1530096431505",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -173,7 +173,7 @@
 			"link": "www.x.com",
 			"date": "1530096431506",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -192,7 +192,7 @@
 			"link": "www.x.com",
 			"date": "1530096431507",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -209,7 +209,7 @@
 			"link": "www.x.com",
 			"date": "1530096431508",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -226,7 +226,7 @@
 			"link": "www.x.com",
 			"date": "1530096431509",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Available"
 		},
@@ -243,7 +243,7 @@
 			"link": "www.x.com",
 			"date": "1530096431510",
 			"imgMain": "",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [],
 			"status": "Unavailable"
 		},
@@ -260,74 +260,74 @@
 			"description": "another description",
 			"link": "www.x.com",
 			"date": "1530860132480",
-			"imgMain": "/public/img/items/test.jpg",
-			"imgSub": "/public/img/items/test.jpg",
+			"imgMain": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
+			"imgSub": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"imgList": [
-				"/public/img/items/test.jpg",
-				"/public/img/items/test.jpg",
-				"/public/img/items/test.jpg"
+				"https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
+				"https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
+				"https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg"
 			],
 			"status": "Available"
 		}
 	],
 	"gallery": [
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img1",
 			"description": "description1"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img2",
 			"description": "description2"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img3",
 			"description": "description3"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img4",
 			"description": "description4"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img5",
 			"description": "description5"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img6",
 			"description": "description6"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img7",
 			"description": "description7"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img8",
 			"description": "description8"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img9",
 			"description": "description9"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img10",
 			"description": "description10"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img11",
 			"description": "description11"
 		},
 		{
-			"img": "/public/img/items/test.jpg",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/items/test.jpg",
 			"title": "img12",
 			"description": "description12"
 		}
@@ -337,7 +337,7 @@
 			"title": "title1",
 			"subTitle": "sub title 1",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -345,7 +345,7 @@
 			"title": "title2",
 			"subTitle": "sub title 2",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -353,7 +353,7 @@
 			"title": "title3",
 			"subTitle": "sub title 3",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -361,7 +361,7 @@
 			"title": "title4",
 			"subTitle": "sub title 4",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -369,7 +369,7 @@
 			"title": "title5",
 			"subTitle": "sub title 5",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -377,7 +377,7 @@
 			"title": "title6",
 			"subTitle": "sub title 6",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -385,7 +385,7 @@
 			"title": "title7",
 			"subTitle": "sub title 7",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -393,7 +393,7 @@
 			"title": "title8",
 			"subTitle": "sub title 8",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -401,7 +401,7 @@
 			"title": "title9",
 			"subTitle": "sub title 9",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		},
@@ -409,38 +409,38 @@
 			"title": "title10",
 			"subTitle": "sub title 10",
 			"author": "admin",
-			"img": "/public/img/blog/300x200.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/blog/300x200.png",
 			"date": 1530096431509,
 			"description": "add description here"
 		}
 	],
 	"slides": [
 		{
-			"img": "/public/img/slides/1000x450.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/slides/1000x450.png",
 			"align": "center",
 			"title": "This is our big Tagline!",
 			"sub": "Here's our small slogan."
 		},
 		{
-			"img": "/public/img/slides/1000x450.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/slides/1000x450.png",
 			"align": "left",
 			"title": "This is our big Tagline!",
 			"sub": "Here's our small slogan."
 		},
 		{
-			"img": "/public/img/slides/1000x450.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/slides/1000x450.png",
 			"align": "right",
 			"title": "This is our big Tagline!",
 			"sub": "Here's our small slogan."
 		},
 		{
-			"img": "/public/img/slides/1000x450.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/slides/1000x450.png",
 			"align": "center",
 			"title": "This is our big Tagline!",
 			"sub": "Here's our small slogan."
 		},
 		{
-			"img": "/public/img/slides/1000x450.png",
+			"img": "https://angeal185.github.io/jquery-lodash-online-store/public/img/slides/1000x450.png",
 			"align": "right",
 			"title": "ygfyujgi",
 			"sub": "jhygyjgjygjy"
