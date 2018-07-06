@@ -408,7 +408,7 @@ function tagInit(res,data,domain){
 function initNav(items,domain,title){
 
   $('#app').prepend(navTpl({
-    "domain":domain
+    "domain":domain,
     "title":title
   }));
   _.forIn(items,function(i,e){
