@@ -6,8 +6,8 @@ $.getJSON('./public/data/data.json', function(data) {
 
   function initBase(){
     initBaseTpl();
-    initNav(data.nav,data.domain);
-    bcrumbInit();
+    initNav(data.nav,data.domain,data.title);
+    bcrumbInit(data.domain);
     initSidebar(data.sidebar);
     addCategories(data.items);
     addTags(data.items);

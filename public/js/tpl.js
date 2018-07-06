@@ -1,7 +1,7 @@
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 
 var baseTpl = _.template('<div id="app"><div class="row"><div id="sidebar" class="col m3"></div><div id="main-view" class="col m9"></div></div></div>'),
-navTpl = _.template('<nav><div class="nav-wrapper"><a href="/" class="brand-logo">{{title}}</a><ul id="nav-mobile" class="right hide-on-med-and-down"></ul></div></nav>'),
+navTpl = _.template('<nav><div class="nav-wrapper"><a href="/{{domain}}" class="brand-logo">{{title}}</a><ul id="nav-mobile" class="right hide-on-med-and-down"></ul></div></nav>'),
 toTopTpl = _.template('<div id="toTop" class="material-icons shrink">keyboard_arrow_up</div>')
 navLnk = _.template('<li><a class="waves-effect waves-light {{href}}Lnk" href="/{{href}}">{{title}}</a></li>'),
 catTpl = _.template('<div class="card my-4"><h5 class="card-header">{{title}}</h5><div id="{{id}}" class="card-body"></div></div>'),
@@ -19,7 +19,7 @@ itemImgTpl = _.template('<img class="materialboxed w100" src="{{img}}">'),
 itemImgSmallTpl = _.template('<div class="col m4"><img class="materialboxed w100 mt40" src="{{img}}"></div>'),
 itemSliderTpl = _.template('<div class="slider"><ul class="slides"></ul></div>'),
 itemSlideTpl = _.template('<li><img src="{{img}}"><div class="caption {{align}}-align"><h3>{{title}}</h3><h5 class="light grey-text text-lighten-3">{{sub}}</h5></div></li>'),
-bCrumb = _.template('<a href="{{href}}" class="breadcrumb">{{title}}</a>'),
+bCrumb = _.template('<a href="/{{domain}}{{href}}" class="breadcrumb">{{title}}</a>'),
 latestItemTpl = _.template('<div class="col s12"><div class="card horizontal row side-item"><div class="card-image col s4"><img class="side-img" src="{{img}}"></div><div class="card-stacked col s8"><div class="card-content"><p class="truncate">Title: <span>{{title}}</span></p><p>Price: <span>{{price}}</span></p><a href="/{{domain}}item/{{src}}">view</a></div></div></div></div>'),
 galleryItemTpl = _.template('<div class="col s3"><h5 class="center">{{title}}</h5><img class="materialboxed w100 shrink bs" data-caption="{{text}}" src="{{src}}"></div>'),
 headerTpl = _.template('<h4>{{title}}</h4>'),

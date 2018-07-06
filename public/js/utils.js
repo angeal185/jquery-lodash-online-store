@@ -117,8 +117,16 @@ function latestItems(items,domain){
 
 }
 
-function bcrumbInit(){
-  $('nav').after($(div).clone().addClass('bcrumb-list').append(bCrumb({"href":"/","title":"Home"}),bCrumb({"href":"#!","title":""})))
+function bcrumbInit(domain){
+  $('nav').after($(div).clone().addClass('bcrumb-list').append(bCrumb({
+    "domain":domain,
+    "href":"",
+    "title":"Home"
+  }),bCrumb({
+    "domain":"",
+    "href":"#!",
+    "title":""
+  })))
 }
 
 function bcrumbChange(i){
@@ -397,10 +405,11 @@ function tagInit(res,data,domain){
   itemPaginate()
 }
 
-function initNav(items,domain){
+function initNav(items,domain,title){
 
   $('#app').prepend(navTpl({
-    "title":"ecommerce"
+    "domain":domain
+    "title":title
   }));
   _.forIn(items,function(i,e){
     $('#nav-mobile').append(navLnk({
