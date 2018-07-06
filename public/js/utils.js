@@ -186,7 +186,7 @@ function itemSingle(data,res){
 
 }
 
-function itemSingleBlog(data,res){
+function itemSingleBlog(data,res,domain){
 
   //$('#main-view').append(itemTpl());
 
@@ -195,6 +195,7 @@ function itemSingleBlog(data,res){
 
     $('#main-view').append(blogItemTpl({
       "title":i.title,
+      "domain":domain,
       "sub":i.subTitle,
       "date":convertDate(i.date),
       "img":i.img,

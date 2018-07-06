@@ -67,7 +67,7 @@ $.getJSON('./public/data/data.json', function(data) {
     var res = ctx.params.id;
     bcrumbChange('Blog')
     setTransition(data.transition.div,data.transition.type)
-    itemSingleBlog(data.blog,res)
+    itemSingleBlog(data.blog,res,data.domain)
     showtoast('Blog')
   });
 
