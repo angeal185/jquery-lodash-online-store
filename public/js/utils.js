@@ -345,7 +345,7 @@ function initGallery(data,res){
   $('.materialboxed').materialbox();
 }
 
-function initBlog(data){
+function initBlog(data,domain){
   $('#main-view').prepend(headerTpl({
     title:"Blog"
   }))
@@ -353,6 +353,7 @@ function initBlog(data){
   _.forEach(data,function(i){
     $('#itList').append(blogItemsTpl({
       "title":i.title,
+      "domain":domain,
       "sub":i.subTitle,
       "date":convertDate(i.date),
       "img":i.img,
