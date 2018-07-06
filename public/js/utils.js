@@ -254,10 +254,10 @@ function itemPaginate(){
   });
 }
 
-function itemList(data){
+function itemList(data,domain){
   basePaginate()
   _.forEach(data,function(i){
-    addItems(i,data.domain)
+    addItems(i,domain)
   })
   itemPaginate()
 }
@@ -366,30 +366,30 @@ function searchBase(){
   $('#sidebar').append(searchBaseTpl())
 }
 
-function searchInit(res,data){
+function searchInit(res,data,domain){
   $('#main-view').prepend(searchResTpl({title:res}))
   basePaginate()
   _.forEach(_.filter(data, {'title': res}),function(i){
-    addItems(i,data.domain)
+    addItems(i,domain)
   })
   itemPaginate()
 }
 
-function catInit(res,data){
+function catInit(res,data,domain){
   $('#main-view').prepend(searchResTpl({title:res}))
   basePaginate()
   _.forEach(_.filter(data, {'category': res}),function(i){
-    addItems(i,data.domain)
+    addItems(i,domain)
   })
   itemPaginate()
 }
 
-function tagInit(res,data){
+function tagInit(res,data,domain){
   $('#main-view').prepend(searchResTpl({title:res}))
 
   basePaginate()
   _.forEach(_.filter(data, {'tags': [res]}),function(i){
-    addItems(i,data.domain)
+    addItems(i,domain)
   })
   itemPaginate()
 }

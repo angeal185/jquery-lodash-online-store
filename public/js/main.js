@@ -1,15 +1,4 @@
 
-/*
-setCart([{
-  title:"title",
-  id:"N00001",
-  category:"category1",
-  price: 1,
-  "status":"available",
-  link: "https://www.x.com"
-}])
-*/
-
 
 $.getJSON('./public/data/data.json', function(data) {
 
@@ -44,7 +33,7 @@ $.getJSON('./public/data/data.json', function(data) {
     bcrumbHide()
     setTransition(data.transition.div,data.transition.type)
     initItemSlider(data.slides)
-    itemList(data.items)
+    itemList(data.items,data.domain)
     searchItems(data.items,data.domain)
 
   });
@@ -98,7 +87,7 @@ $.getJSON('./public/data/data.json', function(data) {
     var res = ctx.params.id;
     bcrumbChange('Search')
     setTransition(data.transition.div,data.transition.type)
-    searchInit(res,data.items)
+    searchInit(res,data.items,data.domain)
 
   });
 
@@ -106,7 +95,7 @@ $.getJSON('./public/data/data.json', function(data) {
     var res = ctx.params.id;
     bcrumbChange('Category')
     setTransition(data.transition.div,data.transition.type)
-    catInit(res,data.items)
+    catInit(res,data.items,data.domain)
 
   });
 
@@ -114,7 +103,7 @@ $.getJSON('./public/data/data.json', function(data) {
     var res = ctx.params.id;
     bcrumbChange('Tag')
     setTransition(data.transition.div,data.transition.type)
-    tagInit(res,data.items)
+    tagInit(res,data.items,data.domain)
 
   });
 
